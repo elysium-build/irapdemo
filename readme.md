@@ -26,13 +26,13 @@ wget https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/no
 
 **Log:**
 ```json
-{"timestamp": "2025-11-09 23:39:03", "response_time": "10", "dns_response": "-", "client_ip": "10.212.1.68", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "GET", "request_url": "https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.txt", "content_type": "text/plain", "squid_cache_status": "TCP_MEM_HIT", "squid_hierarchy_status": "HIER_NONE", "response_code": "200", "response_size": "993", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "0"}
+{"timestamp": "2025-11-09 23:39:03", "response_time": "10", "dns_response": "-", "client_ip": "10.*.*.*", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "GET", "request_url": "https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.txt", "content_type": "text/plain", "squid_cache_status": "TCP_MEM_HIT", "squid_hierarchy_status": "HIER_NONE", "response_code": "200", "response_size": "993", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "0"}
 ```
 ```sh
-[root@epidplndmzXX irap]# wget https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.txt
+[root@hostname1 irap]# wget https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.txt
 --2025-11-10 10:39:03--  https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.txt
-Resolving fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)... 10.212.1.20
-Connecting to fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)|10.212.1.20|:4128... connected.
+Resolving fpx.domain.com (fpx.domain.com)... 10.*.*.*
+Connecting to fpx.domainname.com (fpx.domainname.com)|10.*.*.*|:portnumber... connected.
 Proxy request sent, awaiting response... 200 OK
 Length: 21 [text/plain]
 Saving to: ‘normal.txt.2’
@@ -53,13 +53,13 @@ wget https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/EI
 
 **Log:**
 ```json
-{"timestamp": "2025-11-09 23:40:19", "response_time": "18", "dns_response": "-", "client_ip": "10.212.1.68", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "GET", "request_url": "https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/EICAR.txt", "content_type": "text/html", "squid_cache_status": "TCP_MISS", "squid_hierarchy_status": "HIER_DIRECT", "response_code": "403", "response_size": "1026", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "4"}
+{"timestamp": "2025-11-09 23:40:19", "response_time": "18", "dns_response": "-", "client_ip": "10.*.*.*", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "GET", "request_url": "https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/EICAR.txt", "content_type": "text/html", "squid_cache_status": "TCP_MISS", "squid_hierarchy_status": "HIER_DIRECT", "response_code": "403", "response_size": "1026", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "4"}
 ```
 ```sh
 [root@epidplndmzXX irap]# wget https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/EICAR.txt
 --2025-11-10 10:40:19--  https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/EICAR.txt
-Resolving fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)... 10.212.1.20
-Connecting to fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)|10.212.1.20|:4128... connected.
+Resolving fpx.domainname.com (fpx.domainname.com)... 10.*.*.*
+Connecting to fpx.domainname.com (fpx.domainname.com)|10.*.*.*|:portnumber... connected.
 Proxy request sent, awaiting response... 403 Forbidden
 2025-11-10 10:40:19 ERROR 403: Forbidden.
 ```
@@ -75,17 +75,17 @@ wget https://github.com/elysium-build/irapdemo/raw/refs/heads/main/normal.zip
 
 **Log:**
 ```json
-{"timestamp": "2025-11-09 23:41:13", "response_time": "55", "dns_response": "-", "client_ip": "10.212.1.68", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "CONNECT", "request_url": "raw.githubusercontent.com:443", "content_type": "-", "squid_cache_status": "NONE_NONE", "squid_hierarchy_status": "HIER_DIRECT", "response_code": "200", "response_size": "0", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "0"}
+{"timestamp": "2025-11-09 23:41:13", "response_time": "55", "dns_response": "-", "client_ip": "10.*.*.*", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "CONNECT", "request_url": "raw.githubusercontent.com:443", "content_type": "-", "squid_cache_status": "NONE_NONE", "squid_hierarchy_status": "HIER_DIRECT", "response_code": "200", "response_size": "0", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "0"}
 ```
 ```sh
 [root@epidplndmzXX irap]# wget https://github.com/elysium-build/irapdemo/raw/refs/heads/main/normal.zip
 --2025-11-10 10:41:12--  https://github.com/elysium-build/irapdemo/raw/refs/heads/main/normal.zip
-Resolving fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)... 10.212.1.20
-Connecting to fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)|10.212.1.20|:4128... connected.
+Resolving fpx.domainname.com (fpx.domainname.com)... 10.*.*.*
+Connecting to fpx.domainname.com (fpx.domainname.com)|10.*.*.*|:portnumber... connected.
 Proxy request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.zip [following]
 --2025-11-10 10:41:13--  https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/normal.zip
-Connecting to fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)|10.212.1.20|:4128... connected.
+Connecting to fpx.domainname.com (fpx.domainname.com)|10.*.*.*|:portnumber... connected.
 Proxy request sent, awaiting response... 200 OK
 Length: 712 [application/zip]
 Saving to: ‘normal.zip’
@@ -106,17 +106,17 @@ wget https://github.com/elysium-build/irapdemo/raw/refs/heads/main/encrypted.zip
 
 **Log:**
 ```json
-{"timestamp": "2025-11-09 23:43:00", "response_time": "252", "dns_response": "-", "client_ip": "10.212.1.68", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "GET", "request_url": "https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/encrypted.zip", "content_type": "text/html", "squid_cache_status": "TCP_MISS", "squid_hierarchy_status": "HIER_DIRECT", "response_code": "403", "response_size": "1057", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "4"}
+{"timestamp": "2025-11-09 23:43:00", "response_time": "252", "dns_response": "-", "client_ip": "10.*.*.*", "http_version": "1.1", "user_agent": "Wget/1.21.1", "request_method": "GET", "request_url": "https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/encrypted.zip", "content_type": "text/html", "squid_cache_status": "TCP_MISS", "squid_hierarchy_status": "HIER_DIRECT", "response_code": "403", "response_size": "1057", "tls_version": "TLS/1.3", "tls_cipher": "TLS_AES_256_GCM_SHA384", "cert_errors": "-", "icap_blocking_time": "4"}
 ```
 ```sh
 [root@epidplndmzXX irap]# wget https://github.com/elysium-build/irapdemo/raw/refs/heads/main/encrypted.zip
 --2025-11-10 10:43:00--  https://github.com/elysium-build/irapdemo/raw/refs/heads/main/encrypted.zip
-Resolving fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)... 10.212.1.20
-Connecting to fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)|10.212.1.20|:4128... connected.
+Resolving fpx.domainname.com (fpx.domainname.com)... 10.*.*.*
+Connecting to fpx.domainname.com (fpx.domainname.com)|10.*.*.*|:portnumber... connected.
 Proxy request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/encrypted.zip [following]
 --2025-11-10 10:43:00--  https://raw.githubusercontent.com/elysium-build/irapdemo/refs/heads/main/encrypted.zip
-Connecting to fpxdmz.query.consul.elysium.epicon.com (fpxdmz.query.consul.elysium.epicon.com)|10.212.1.20|:4128... connected.
+Connecting to fpx.domainname.com (fpx.domainname.com)|10.*.*.*|:portnumber... connected.
 Proxy request sent, awaiting response... 403 Forbidden
 2025-11-10 10:43:00 ERROR 403: Forbidden.
 ```
